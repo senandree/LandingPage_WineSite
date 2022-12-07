@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#container {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    background: url(./vinhos-e-aperitivos.jpg) no-repeat fixed center;
+}
+
+#lado-esquerdo {
+    
+}
+
+#texto-chamativo {
+    margin: 50px;
+    padding: 30px;
+    border-radius: 15px;
+    background-color: rgb(210 210 210 / 75%);
+}
+
+#texto-chamativo > h2 {
+    margin-top: 30px;
+}
+
+#texto-chamativo > h4 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+#lado-direito {
+    background-color: #ae9d08;
+    padding: 30px;
+}
+
+.campo-formulario {
+    /* padding-left: 20px; */
+    margin-top: 15px;
+}
+
+.campo-formulario label,
+.campo-formulario input {
+    display: block;
+    width: 100%;
+}
+
+.campo-formulario:nth-child(3) { 
+    /* background-color: red; */
+}
+
+#select-tipo-vinho {
+    width: 100%;
+}
+
+#botao-enviar {
+    margin-top: 20px;
+    background: #fec800;
+    border-radius: 5px;
+    padding: 10px 20px;
+    border: none;
+    float: right;
+    cursor: pointer;
+}
+
+#botao-enviar:hover {
+    font-weight: bold;
+}
+
+@media screen and (max-width: 767px) {
+    #container {
+        flex-direction: column;
+    }
+
+    #texto-chamativo > h1 {
+        font-size: 1.5em;
+    }
+}
